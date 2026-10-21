@@ -18,4 +18,3 @@ Los proyectos son muestras visuales hechas con CSS; no son trabajos reales de Ju
 
 Puedes pedir a Codex: «Cambia los colores del portfolio», «Añade este proyecto a Gráficas» o «Sustituye los marcadores de Juse por mi experiencia».
 
-Estructura inspirada en https://alvaroymiro.com/ y selector basado en la referencia facilitada. No se han copiado sus textos, marcas ni proyectos.
