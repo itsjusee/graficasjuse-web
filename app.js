@@ -1,4 +1,32 @@
 const tabs = [...document.querySelectorAll('[role="tab"]')];
+const galleryViewButton = document.querySelector('.gallery-view');
+if (galleryViewButton) {
+  const gallery = document.getElementById('projects-gallery');
+  galleryViewButton.addEventListener('click', () => {
+    const grid = gallery.dataset.view !== 'grid';
+    gallery.dataset.view = grid ? 'grid' : 'individual';
+    galleryViewButton.textContent = grid ? 'Grid view' : 'Individual view';
+    galleryViewButton.setAttribute('aria-label', grid
+      ? 'Grid view. Switch to individual view'
+      : 'Individual view. Switch to grid view');
+  });
+}
+document.querySelectorAll('.brut-video').forEach(container => {
+  const video = container.querySelector('video');
+  const button = container.querySelector('.brut-video-sound');
+  function updateSoundControl() {
+    const soundEnabled = !video.muted;
+    button.setAttribute('aria-pressed', String(soundEnabled));
+    button.setAttribute('aria-label', soundEnabled ? 'Desactivar sonido' : 'Activar sonido');
+  }
+  button.addEventListener('click', () => {
+    video.muted = !video.muted;
+    updateSoundControl();
+    if (video.paused) video.play().catch(() => {});
+  });
+  video.addEventListener('volumechange', updateSoundControl);
+  updateSoundControl();
+});
 document.querySelectorAll('.brut-frames-track').forEach(track => {
   let drag;
   track.addEventListener('pointerdown', event => {
@@ -195,6 +223,14 @@ function hideProjectCursor() {
   projectCursor.classList.remove('is-visible');
 }
 document.querySelectorAll('.project-open').forEach(button => {
+  if (button.classList.contains('project-building')) {
+    button.addEventListener('click', event => {
+      event.preventDefault();
+      if (projectCursorMedia.matches && event.pointerType !== 'touch') return;
+      const expanded = button.classList.toggle('is-building-visible');
+      button.setAttribute('aria-expanded', String(expanded));
+    });
+  }
   function moveProjectCursor(event) {
     if (!projectCursorMedia.matches || event.pointerType === 'touch') return;
     projectCursor.textContent = button.dataset.project === '2' ? '🛠️ Currently building' : button.dataset.project === '3' ? 'View project' : 'View case study';

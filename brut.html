@@ -18,15 +18,26 @@
     <div class="brut-meta"><span>Brand Strategy · Creative Direction · UX/UI</span></div>
     <h1 id="brut-title">BRUT. Building a modular sound experience.</h1>
     <p>BRUT is a modular speaker brand that connects sound, design and contemporary culture. An expandable ecosystem built around customization, self-expression and the way people experience music.</p>
-    <div class="brut-placeholder" role="img" aria-label="Project Overview — image coming soon"></div>
+    <div class="brut-video">
+      <video autoplay loop muted playsinline preload="metadata" aria-label="BRUT: presentación del proyecto">
+        <source src="Recursos/Graficas/01%20Brut/quick_export05.mp4" type="video/mp4">
+      </video>
+      <button class="brut-video-sound" type="button" aria-label="Activar sonido" aria-pressed="false">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M11 5 6 9H3v6h3l5 4z"/>
+          <path class="sound-on-icon" d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/>
+          <path class="sound-off-icon" d="m16 9 6 6m0-6-6 6"/>
+        </svg>
+      </button>
+    </div>
     <p class="brut-credits">Project developed alongside <a href="https://alvaroymiro.com/about" target="_blank" rel="noopener noreferrer">Álvaro y Miró</a>, <a href="https://beamunoz.com/" target="_blank" rel="noopener noreferrer">Beatriz Muñoz</a> and <a href="https://www.linkedin.com/in/elenaivars/" target="_blank" rel="noopener noreferrer">Elena Ivars</a>. Mentored by <a href="https://tot.studio/" target="_blank" rel="noopener noreferrer">Alejandro Peiró</a>, <a href="https://www.linkedin.com/in/ceciliarod/" target="_blank" rel="noopener noreferrer">Cecilia Rodríguez</a> and <a href="https://www.instagram.com/cocotastudio/" target="_blank" rel="noopener noreferrer">Rubén Alí</a>.</p>
   </section>
   <section id="problem" class="brut-section" aria-labelledby="problem-title">
     <h2 id="problem-title" class="brut-label">Problem</h2>
     <p>The audio industry is dominated by technical communication, leaving little room for identity and self-expression. Our challenge was to rethink the speaker as a cultural object rather than just a functional device.</p>
     <div class="brut-comparison" style="--comparison-position:50%">
-      <div class="brut-comparison-layer brut-comparison-pink" aria-hidden="true"></div>
-      <div class="brut-comparison-layer brut-comparison-blue" aria-hidden="true"></div>
+      <div class="brut-comparison-layer brut-comparison-pink" style="background-image:url('Recursos/Graficas/01%20Brut/despues.png')" aria-hidden="true"></div>
+      <div class="brut-comparison-layer brut-comparison-blue" style="background-image:url('Recursos/Graficas/01%20Brut/antes.png?v=3')" aria-hidden="true"></div>
       <span class="brut-comparison-hint" aria-hidden="true">Drag to compare</span>
       <span class="brut-comparison-divider" aria-hidden="true"><span>↔</span></span>
       <input class="brut-comparison-range" type="range" min="0" max="100" value="50" aria-label="Comparar las dos imágenes" aria-valuetext="50% azul, 50% rosa">
@@ -42,7 +53,9 @@
     <h3>System-first. People-driven.</h3>
     <p>We developed a modular ecosystem that puts users in control of their sound experience.</p>
     <p>Five interchangeable skins allow users to customize their speakers, while a flexible brand identity translates modularity into a visual language.</p>
-    <div class="brut-placeholder" role="img" aria-label="Decisions — image coming soon"></div>
+    <video class="brut-placeholder" autoplay loop muted playsinline preload="metadata" aria-label="BRUT: Skin Selector">
+      <source src="Recursos/Graficas/01%20Brut/Skin%20selector.mp4" type="video/mp4">
+    </video>
   </section>
   <section id="identity" class="brut-section" aria-labelledby="identity-title">
     <h2 id="identity-title" class="brut-label">Identity</h2>
@@ -51,25 +64,42 @@
     <p>Rooted in internet-native Gen Z culture, the identity draws from online subcultures, hyper-digital aesthetics and contemporary fashion, combining futuristic textures, exaggerated forms and a playful attitude.</p>
     <div class="brut-identity-gallery" role="region" aria-label="Identity gallery" aria-roledescription="carousel">
       <div class="brut-identity-track" id="brut-identity-track" tabindex="0" aria-label="Imágenes de Identity: desliza horizontalmente">
-        <div class="brut-identity-slide" role="img" aria-label="Identity 1 — imagen pendiente"></div>
-        <div class="brut-identity-slide" role="img" aria-label="Identity 2 — imagen pendiente"></div>
-        <div class="brut-identity-slide" role="img" aria-label="Identity 3 — imagen pendiente"></div>
+        <video class="brut-identity-slide" autoplay loop muted playsinline preload="metadata" aria-label="BRUT: Bento"><source src="Recursos/Graficas/01%20Brut/bento%20brut.mp4" type="video/mp4"></video>
+        <img class="brut-identity-slide brut-identity-animation" src="Recursos/Graficas/01%20Brut/gif/identity-loop.gif" alt="BRUT: secuencia de tres imágenes en bucle">
+        <video class="brut-identity-slide" autoplay loop muted playsinline preload="metadata" aria-label="BRUT: Personajes Grupo"><source src="Recursos/Graficas/01%20Brut/PersonajesGrupo.mp4" type="video/mp4"></video>
       </div>
       <div class="brut-identity-selector" role="group" aria-label="Seleccionar imagen de Identity">
-        <button type="button" aria-label="Ver imagen 1" aria-controls="brut-identity-track" aria-pressed="true"></button>
-        <button type="button" aria-label="Ver imagen 2" aria-controls="brut-identity-track" aria-pressed="false"></button>
-        <button type="button" aria-label="Ver imagen 3" aria-controls="brut-identity-track" aria-pressed="false"></button>
+        <button type="button" aria-label="Ver Bento Brut" aria-controls="brut-identity-track" aria-pressed="true"><video src="Recursos/Graficas/01%20Brut/bento%20brut.mp4#t=0.1" muted playsinline preload="auto" aria-hidden="true"></video></button>
+        <button type="button" aria-label="Ver secuencia de Identity" aria-controls="brut-identity-track" aria-pressed="false" style="background-image:url('Recursos/Graficas/01%20Brut/gif/gif%201.png')"></button>
+        <button type="button" aria-label="Ver Personajes Grupo" aria-controls="brut-identity-track" aria-pressed="false"><video src="Recursos/Graficas/01%20Brut/PersonajesGrupo.mp4#t=0.1" muted playsinline preload="auto" aria-hidden="true"></video></button>
       </div>
     </div>
     <h2 class="brut-heading">From product imagery to packaging and campaigns, the visual system adapts across different touchpoints while maintaining a recognizable identity.</h2>
     <h2 class="brut-heading">Each skin brings its own personality, allowing BRUT to explore different aesthetics within a cohesive visual universe.</h2>
     <div class="brut-frames" role="region" aria-label="BRUT visual universe" aria-roledescription="carousel">
       <div class="brut-frames-track" tabindex="0" aria-label="Frames de Identity: desliza horizontalmente">
-        <div class="brut-frame" role="img" aria-label="Frame 1 — imagen pendiente"></div>
-        <div class="brut-frame" role="img" aria-label="Frame 2 — imagen pendiente"></div>
-        <div class="brut-frame" role="img" aria-label="Frame 3 — imagen pendiente"></div>
-        <div class="brut-frame" role="img" aria-label="Frame 4 — imagen pendiente"></div>
-        <div class="brut-frame" role="img" aria-label="Frame 5 — imagen pendiente"></div>
+        <img class="brut-frame" src="Recursos/Graficas/01%20Brut/carrusel%20fotos/carrusel%201.png" alt="BRUT: universo visual 1" width="1080" height="1440" loading="lazy" decoding="async" draggable="false">
+        <img class="brut-frame" src="Recursos/Graficas/01%20Brut/carrusel%20fotos/carrusel%202.png" alt="BRUT: universo visual 2" width="1080" height="1440" loading="lazy" decoding="async" draggable="false">
+        <img class="brut-frame" src="Recursos/Graficas/01%20Brut/carrusel%20fotos/carrusel%203.png" alt="BRUT: universo visual 3" width="1080" height="1440" loading="lazy" decoding="async" draggable="false">
+        <img class="brut-frame" src="Recursos/Graficas/01%20Brut/carrusel%20fotos/carrusel%204.png" alt="BRUT: universo visual 4" width="1080" height="1440" loading="lazy" decoding="async" draggable="false">
+        <img class="brut-frame" src="Recursos/Graficas/01%20Brut/carrusel%20fotos/carrusel%205.png" alt="BRUT: universo visual 5" width="1080" height="1440" loading="lazy" decoding="async" draggable="false">
+        <img class="brut-frame" src="Recursos/Graficas/01%20Brut/carrusel%20fotos/carrusel%206.png" alt="BRUT: universo visual 6" width="1080" height="1440" loading="lazy" decoding="async" draggable="false">
+        <img class="brut-frame" src="Recursos/Graficas/01%20Brut/carrusel%20fotos/carrusel%207.png" alt="BRUT: universo visual 7" width="1080" height="1440" loading="lazy" decoding="async" draggable="false">
+        <img class="brut-frame" src="Recursos/Graficas/01%20Brut/carrusel%20fotos/carrusel%208.png" alt="BRUT: universo visual 8" width="1080" height="1440" loading="lazy" decoding="async" draggable="false">
+        <img class="brut-frame" src="Recursos/Graficas/01%20Brut/carrusel%20fotos/carrusel%209.png" alt="BRUT: universo visual 9" width="1080" height="1440" loading="lazy" decoding="async" draggable="false">
+        <img class="brut-frame" src="Recursos/Graficas/01%20Brut/carrusel%20fotos/carrusel%2010.png" alt="BRUT: universo visual 10" width="1080" height="1440" loading="lazy" decoding="async" draggable="false">
+        <img class="brut-frame" src="Recursos/Graficas/01%20Brut/carrusel%20fotos/carrusel%2011.png" alt="BRUT: universo visual 11" width="1080" height="1440" loading="lazy" decoding="async" draggable="false">
+        <img class="brut-frame" src="Recursos/Graficas/01%20Brut/carrusel%20fotos/carrusel%2012.png" alt="BRUT: universo visual 12" width="1080" height="1440" loading="lazy" decoding="async" draggable="false">
+        <img class="brut-frame" src="Recursos/Graficas/01%20Brut/carrusel%20fotos/carrusel%2013.png" alt="BRUT: universo visual 13" width="1080" height="1440" loading="lazy" decoding="async" draggable="false">
+        <img class="brut-frame" src="Recursos/Graficas/01%20Brut/carrusel%20fotos/carrusel%2014.png" alt="BRUT: universo visual 14" width="1080" height="1440" loading="lazy" decoding="async" draggable="false">
+        <img class="brut-frame" src="Recursos/Graficas/01%20Brut/carrusel%20fotos/carrusel%2015.png" alt="BRUT: universo visual 15" width="1080" height="1440" loading="lazy" decoding="async" draggable="false">
+        <img class="brut-frame" src="Recursos/Graficas/01%20Brut/carrusel%20fotos/carrusel%2016.png" alt="BRUT: universo visual 16" width="1080" height="1440" loading="lazy" decoding="async" draggable="false">
+        <img class="brut-frame" src="Recursos/Graficas/01%20Brut/carrusel%20fotos/carrusel%2017.png" alt="BRUT: universo visual 17" width="1080" height="1440" loading="lazy" decoding="async" draggable="false">
+        <img class="brut-frame" src="Recursos/Graficas/01%20Brut/carrusel%20fotos/carrusel%2018.png" alt="BRUT: universo visual 18" width="1080" height="1440" loading="lazy" decoding="async" draggable="false">
+        <img class="brut-frame" src="Recursos/Graficas/01%20Brut/carrusel%20fotos/carrusel%2019.png" alt="BRUT: universo visual 19" width="1080" height="1440" loading="lazy" decoding="async" draggable="false">
+        <img class="brut-frame" src="Recursos/Graficas/01%20Brut/carrusel%20fotos/carrusel%2020.png" alt="BRUT: universo visual 20" width="1080" height="1440" loading="lazy" decoding="async" draggable="false">
+        <img class="brut-frame" src="Recursos/Graficas/01%20Brut/carrusel%20fotos/carrusel%2021.png" alt="BRUT: universo visual 21" width="1080" height="1440" loading="lazy" decoding="async" draggable="false">
+        <img class="brut-frame" src="Recursos/Graficas/01%20Brut/carrusel%20fotos/carrusel%2022.png" alt="BRUT: universo visual 22" width="1080" height="1440" loading="lazy" decoding="async" draggable="false">
       </div>
     </div>
   </section>
@@ -78,10 +108,14 @@
     <h3>Simplifying through storytelling.</h3>
     <h2 class="brut-heading">The main UX challenge was making a modular product system easy to understand within a single-page shopping experience.</h2>
     <h2 class="brut-heading">We used scrollytelling to guide users from discovery to customization. Inspired by Apple's approach to product storytelling, we translated technical specifications into engaging, easy-to-digest visual cards.</h2>
-    <div class="brut-placeholder" role="img" aria-label="E-commerce storytelling — image coming soon"></div>
+    <video class="brut-placeholder" autoplay loop muted playsinline preload="metadata" aria-label="BRUT: scroll de la web">
+      <source src="Recursos/Graficas/01%20Brut/brut%20scroll%20v4.mp4" type="video/mp4">
+    </video>
     <h2 class="brut-heading">The shopping journey follows a progressive logic: discover the product, understand its features, choose the core system, and expand it with additional modules and skins.</h2>
     <h2 class="brut-heading">This approach turns a complex product into an intuitive shopping experience.</h2>
-    <div class="brut-placeholder" role="img" aria-label="E-commerce — image coming soon"></div>
+    <video class="brut-placeholder" autoplay loop muted playsinline preload="metadata" aria-label="BRUT: experiencia de ecommerce">
+      <source src="Recursos/Graficas/01%20Brut/Ecommerce%20v1.mp4" type="video/mp4">
+    </video>
   </section>
   <div class="brut-closing">
   <section id="brand-launch" class="brut-section" aria-labelledby="brand-launch-title">
@@ -89,16 +123,14 @@
     <h3>Culture before conversion.</h3>
     <p>We developed a launch concept connecting BRUT with music, nightlife and creative communities.</p>
     <p>Through a music-led event and a physical pop-up, the strategy aimed to build cultural relevance and brand recognition before focusing on conversion.</p>
-    <div class="brut-stories" role="region" aria-label="Brand Launch stories" aria-roledescription="carousel">
-      <div class="brut-stories-track" id="brut-stories-track" tabindex="0" aria-label="Stories: desliza para ver las tres piezas">
-        <div class="brut-story" role="group" aria-roledescription="slide" aria-label="1 de 3"><div class="brut-story-media" role="img" aria-label="Story 1 — vídeo pendiente"></div></div>
-        <div class="brut-story" role="group" aria-roledescription="slide" aria-label="2 de 3"><div class="brut-story-media" role="img" aria-label="Story 2 — vídeo pendiente"></div></div>
-        <div class="brut-story" role="group" aria-roledescription="slide" aria-label="3 de 3"><div class="brut-story-media" role="img" aria-label="Story 3 — vídeo pendiente"></div></div>
+    <div class="brut-identity-gallery brut-launch-gallery" role="region" aria-label="Brand Launch stories" aria-roledescription="carousel">
+      <div class="brut-identity-track" id="brut-stories-track" tabindex="0" aria-label="Stories: desliza para ver las dos piezas">
+        <div class="brut-story" role="group" aria-roledescription="slide" aria-label="1 de 2"><video class="brut-story-media" autoplay loop muted playsinline preload="metadata" aria-label="BRUT hinchable"><source src="Recursos/Graficas/01%20Brut/BRUT_HINCHABLE02.mp4" type="video/mp4"></video></div>
+        <div class="brut-story" role="group" aria-roledescription="slide" aria-label="2 de 2"><video class="brut-story-media" autoplay loop muted playsinline preload="metadata" aria-label="Prueba BRUT"><source src="Recursos/Graficas/01%20Brut/prueba_brut.mp4" type="video/mp4"></video></div>
       </div>
-      <div class="brut-stories-controls">
-        <button type="button" aria-label="Ver story 1" aria-controls="brut-stories-track" aria-pressed="true"></button>
-        <button type="button" aria-label="Ver story 2" aria-controls="brut-stories-track" aria-pressed="false"></button>
-        <button type="button" aria-label="Ver story 3" aria-controls="brut-stories-track" aria-pressed="false"></button>
+      <div class="brut-identity-selector" role="group" aria-label="Seleccionar vídeo de Brand Launch">
+        <button type="button" aria-label="Ver story 1" aria-controls="brut-stories-track" aria-pressed="true"><video src="Recursos/Graficas/01%20Brut/BRUT_HINCHABLE02.mp4#t=0.1" muted playsinline preload="auto" aria-hidden="true"></video></button>
+        <button type="button" aria-label="Ver story 2" aria-controls="brut-stories-track" aria-pressed="false"><video src="Recursos/Graficas/01%20Brut/prueba_brut.mp4#t=0.1" muted playsinline preload="auto" aria-hidden="true"></video></button>
       </div>
     </div>
   </section>
