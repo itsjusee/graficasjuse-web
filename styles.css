@@ -60,6 +60,8 @@ body::before{
 }
 
 /* Design palette: names shared with the portfolio's visual direction. */
+/* Reglas: column guides temporarily hidden. Remove this rule to show them again. */
+.guides{display:none}
 :root{
   --rosa:#FF48D1;
   --azul:#3D77FF;
@@ -469,9 +471,9 @@ video.brut-placeholder{background:#fff}
 
 /* Project view switch and square grid using the mobile cover crops. */
 .gallery-toolbar{display:flex;justify-content:flex-start;margin-bottom:16px}
-.gallery-view{min-height:32px;padding:8px;border:0;border-radius:8px;background:var(--gris-claro);color:var(--negro);font-size:16px;line-height:100%;cursor:pointer;transition:background .2s ease}
+.gallery-view{min-height:32px;padding:8px;border:0;border-radius:8px;background:var(--gris-claro);color:var(--gris-oscuro);font-size:16px;line-height:100%;cursor:pointer;transition:color .2s ease}
 .gallery-view:focus-visible{outline:4px solid var(--rosa);outline-offset:4px}
-@media(hover:hover){.gallery-view:hover{background:var(--rosa)}}
+@media(hover:hover){.gallery-view:hover{color:var(--negro)}}
 .gallery[data-view="grid"]{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 24px}
 .gallery[data-view="grid"] .project-open{position:relative;aspect-ratio:1 / 1;overflow:hidden;border-radius:8px}
 #projects-gallery[data-view="grid"] .project-cover{position:absolute;top:0;left:50%;right:auto;width:177.777778%;height:100%;aspect-ratio:16 / 9;object-fit:cover;transform:translateX(-50%);border-radius:0}
