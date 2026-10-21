@@ -14,7 +14,4 @@ Abre esta carpeta en Visual Studio Code. Para ver la web, abre `index.html` en t
 
 Las dos columnas centrales ocupan el 50 % de la pantalla en desktop. En móvil el contenido ocupa todo el ancho. El selector flotante cambia entre Gráficas y Juse. Los proyectos se abren en un visor con anterior, siguiente y cierre con Escape.
 
-Los proyectos son muestras visuales hechas con CSS; no son trabajos reales de Juse. Los datos del CV quedan pendientes. Para añadir tu CV en PDF, guarda el archivo en esta carpeta y sustituye el aviso del CV por un enlace a ese archivo.
-
-Puedes pedir a Codex: «Cambia los colores del portfolio», «Añade este proyecto a Gráficas» o «Sustituye los marcadores de Juse por mi experiencia».
-
+Los proyectos que se muestran tienen mi autoría y no podéis usarlos. Cualquier uso no aprobado de estos proyectos que se encuentre tendrá problemas legales.
