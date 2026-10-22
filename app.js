@@ -98,7 +98,7 @@ document.querySelectorAll('.brut-stories').forEach(carousel => {
 document.querySelectorAll('.brut-comparison-range').forEach(input => {
   input.addEventListener('input', () => {
     input.parentElement.style.setProperty('--comparison-position', input.value + '%');
-    input.setAttribute('aria-valuetext', `${input.value}% azul, ${100 - Number(input.value)}% rosa`);
+    input.setAttribute('aria-valuetext', `${input.value}% ${input.dataset.beforeLabel || 'azul'}, ${100 - Number(input.value)}% ${input.dataset.afterLabel || 'rosa'}`);
   });
 });
 const panels = [...document.querySelectorAll('[role="tabpanel"]')];
