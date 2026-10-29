@@ -1,3 +1,9 @@
+document.querySelectorAll('video[data-playback-rate]').forEach(video => {
+  const rate = Number(video.dataset.playbackRate);
+  video.defaultPlaybackRate = rate;
+  video.playbackRate = rate;
+  video.addEventListener('loadedmetadata', () => { video.playbackRate = rate; });
+});
 const tabs = [...document.querySelectorAll('[role="tab"]')];
 const galleryViewButton = document.querySelector('.gallery-view');
 if (galleryViewButton) {
