@@ -4,6 +4,32 @@ document.querySelectorAll('video[data-playback-rate]').forEach(video => {
   video.playbackRate = rate;
   video.addEventListener('loadedmetadata', () => { video.playbackRate = rate; });
 });
+document.querySelectorAll('.project-hover-video').forEach(video => {
+  const link = video.closest('.project-open');
+  let hovered = false;
+  let focused = false;
+  function updatePreview() {
+    if (hovered || focused) {
+      video.play().catch(() => {});
+    } else {
+      link.classList.remove('is-previewing');
+      video.pause();
+      if (video.readyState > 0) video.currentTime = 0;
+    }
+  }
+  video.addEventListener('playing', () => {
+    if (hovered || focused) link.classList.add('is-previewing');
+    else video.pause();
+  });
+  link.addEventListener('pointerenter', event => {
+    if (event.pointerType === 'touch') return;
+    hovered = true;
+    updatePreview();
+  });
+  link.addEventListener('pointerleave', () => { hovered = false; updatePreview(); });
+  link.addEventListener('focus', () => { focused = true; updatePreview(); });
+  link.addEventListener('blur', () => { focused = false; updatePreview(); });
+});
 const tabs = [...document.querySelectorAll('[role="tab"]')];
 const galleryViewButton = document.querySelector('.gallery-view');
 if (galleryViewButton) {

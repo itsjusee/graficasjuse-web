@@ -507,6 +507,9 @@ video.brut-placeholder{background:#fff}
 .sugar-case .sugar-impact-caption{width:100%;max-width:none;margin:16px 0 0;text-align:center;color:var(--gris-oscuro)}
 
 /* Keep media blocks black while their content loads. */
+.project-open:has(.project-hover-video){position:relative;overflow:hidden}
+.project-hover-video{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;border-radius:inherit;opacity:0;pointer-events:none;transition:opacity .2s ease}
+.project-open.is-previewing .project-hover-video{opacity:1}
 img,video,.project-open,.juse-portrait,.brut-frames,.brut-frames-track,
 .brut-identity-gallery,.brut-identity-track,.brut-identity-slide,
 .brut-story-media,.brut-comparison,.brut-comparison-layer,
