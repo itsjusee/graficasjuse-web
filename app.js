@@ -6,15 +6,21 @@ document.querySelectorAll('video[data-playback-rate]').forEach(video => {
 });
 document.querySelectorAll('.project-hover-video').forEach(video => {
   const link = video.closest('.project-open');
+  const start = Number(video.dataset.previewStart || 0);
+  const end = Number(video.dataset.previewEnd || Infinity);
   let hovered = false;
   let focused = false;
+  video.addEventListener('loadedmetadata', () => { video.currentTime = start; });
+  video.addEventListener('timeupdate', () => {
+    if (video.currentTime >= end || video.currentTime < start) video.currentTime = start;
+  });
   function updatePreview() {
     if (hovered || focused) {
       video.play().catch(() => {});
     } else {
       link.classList.remove('is-previewing');
       video.pause();
-      if (video.readyState > 0) video.currentTime = 0;
+      if (video.readyState > 0) video.currentTime = start;
     }
   }
   video.addEventListener('playing', () => {
@@ -27,7 +33,7 @@ document.querySelectorAll('.project-hover-video').forEach(video => {
     updatePreview();
   });
   link.addEventListener('pointerleave', () => { hovered = false; updatePreview(); });
-  link.addEventListener('focus', () => { focused = true; updatePreview(); });
+  link.addEventListener('focus', () => { focused = link.matches(':focus-visible'); updatePreview(); });
   link.addEventListener('blur', () => { focused = false; updatePreview(); });
 });
 const tabs = [...document.querySelectorAll('[role="tab"]')];
