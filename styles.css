@@ -505,3 +505,9 @@ video.brut-placeholder{background:#fff}
 .sugar-case #creative-direction .sugar-magnets img.brut-frame{background:#000}
 
 .sugar-case .sugar-impact-caption{width:100%;max-width:none;margin:16px 0 0;text-align:center;color:var(--gris-oscuro)}
+
+/* Keep media blocks black while their content loads. */
+img,video,.project-open,.juse-portrait,.brut-frames,.brut-frames-track,
+.brut-identity-gallery,.brut-identity-track,.brut-identity-slide,
+.brut-story-media,.brut-comparison,.brut-comparison-layer,
+.brut-placeholder,.brut-video{background-color:#000!important}
