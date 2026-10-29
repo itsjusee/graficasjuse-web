@@ -491,3 +491,17 @@ video.brut-placeholder{background:#fff}
 
 .gallery[data-view=grid] .caption>.project-date{display:none}
 .gallery[data-view=grid] .caption{grid-template-columns:minmax(0,1fr)}
+
+.sugar-overview-video,.sugar-packaging-image{display:block;height:auto;aspect-ratio:auto}
+
+.sugar-case #creative-direction .sugar-magnets,.sugar-case #creative-direction .sugar-magnets .brut-frames-track{background:#000}
+
+/* Overlapping looping clips in the Sugar Papi Impact section. */
+.sugar-impact-videos{position:relative;isolation:isolate;container-type:inline-size;width:72%;aspect-ratio:1.08;margin:40px auto 0}
+.sugar-impact-video{position:absolute;display:block;width:39%;aspect-ratio:9 / 16;height:auto;object-fit:cover;border-radius:16px;background:#000}
+.sugar-impact-video:first-child{top:8%;left:18%;z-index:1;transform:rotate(-7deg)}
+.sugar-impact-video:last-child{top:18%;left:49%;transform:rotate(14deg)}
+@media(width < 768px){.sugar-impact-video{border-radius:10px}}
+.sugar-case #creative-direction .sugar-magnets img.brut-frame{background:#000}
+
+.sugar-case .sugar-impact-caption{width:100%;max-width:none;margin:16px 0 0;text-align:center;color:var(--gris-oscuro)}
