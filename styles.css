@@ -384,6 +384,10 @@ video.brut-placeholder{background:#fff}
 .brut-closing{background:#e0e0e0;box-shadow:0 0 0 100vmax #e0e0e0;clip-path:inset(0 -100vmax);padding:48px 0}
 .brut-closing .brut-label{background:#fff}
 .brut-closing .brut-section:last-child{margin-bottom:0}
+.brut-closing #reflections{margin-bottom:0}
+.brut-end-photo{display:flex;flex-direction:column;align-items:center;gap:32px;margin:0;padding:56px 0 24px}
+.brut-end-photo img{display:block;width:460px;max-width:85%;height:auto;transform:rotate(-6deg);box-shadow:0 6px 16px #0002}
+.brut-end-photo figcaption{font-size:14px;line-height:1.4;text-align:center;color:var(--gris-oscuro)}
 .brut-page footer{margin-top:0;padding-top:88px;background:#e0e0e0;box-shadow:0 0 0 100vmax #e0e0e0;clip-path:inset(0 -100vmax)}
 .sugar-page footer{background:#e0e0e0;box-shadow:0 0 0 100vmax #e0e0e0}
 .sugar-page{background:#fafaf9}
@@ -514,3 +518,7 @@ img,video,.project-open,.juse-portrait,.brut-frames,.brut-frames-track,
 .brut-identity-gallery,.brut-identity-track,.brut-identity-slide,
 .brut-story-media,.brut-comparison,.brut-comparison-layer,
 .brut-placeholder,.brut-video{background-color:#000!important}
+
+#graficas .gallery .project-open,
+#graficas .gallery .project-cover,
+#graficas .gallery .project-hover-video{background-color:transparent!important}
