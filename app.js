@@ -179,7 +179,7 @@ window.addEventListener('hashchange', syncHash);
 if (!document.body.dataset.projectPage) syncHash();
 
 // Track the section crossing the upper third of the viewport, including tall media.
-const brutLinks = [...document.querySelectorAll('.brut-index a')];
+const brutLinks = [...document.querySelectorAll('.brut-index a:not([hidden])')];
 if (brutLinks.length) {
   const brutSections = brutLinks.map(link => document.getElementById(link.hash.slice(1)));
   let brutFramePending = false;

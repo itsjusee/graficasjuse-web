@@ -322,6 +322,8 @@ img.brut-frame{display:block;width:auto;height:100%;max-width:none;aspect-ratio:
 .brut-identity-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;border-radius:8px}
 .brut-identity-track::-webkit-scrollbar{display:none}
 .sugar-product-gallery img.brut-identity-slide{display:block;width:100%;object-fit:cover}
+#oven-anniversary-track{aspect-ratio:16 / 9;align-items:flex-start}
+#oven-anniversary-track img.brut-identity-slide{display:block;width:100%;height:auto;aspect-ratio:16 / 9;object-fit:contain}
 .brut-identity-slide{flex:0 0 100%;min-width:0;aspect-ratio:16 / 9;scroll-snap-align:start;background:var(--identity-one);background-size:cover;background-position:center}
 .brut-identity-slide:nth-child(2){background:var(--identity-two);background-size:cover;background-position:center}
 .brut-identity-slide:nth-child(3){background:var(--identity-three);background-size:cover;background-position:center}
@@ -522,3 +524,6 @@ img,video,.project-open,.juse-portrait,.brut-frames,.brut-frames-track,
 #graficas .gallery .project-open,
 #graficas .gallery .project-cover,
 #graficas .gallery .project-hover-video{background-color:transparent!important}
+
+/* Keep unfinished case study content out of the published layout. */
+.nightlife-page [hidden]{display:none!important}
